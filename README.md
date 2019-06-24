@@ -1,6 +1,13 @@
 # Flutter
 
-
+## How to switch channels
+* There are 4 channels in flutter, master, dev, beta and stable.
+```bash
+$ flutter channel stable
+$ flutter channel master
+$ flutter channel dev
+$ flutter channel beta
+```
 
 ## Useful Resources & Links
 * [Official Flutter Docs](https://flutter.io/docs/)

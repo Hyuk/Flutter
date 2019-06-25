@@ -9,6 +9,28 @@ $ flutter channel dev
 $ flutter channel beta
 ```
 
+## Flutter Check Tool
+```bash
+$ flutter doctor
+```
+
+## Splash Screen
+* Android: Update launch_background.xml (android/app/src/main/res/drawable/launch_background.xml)
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modify this file to customize your launch splash screen -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@android:color/black" /> <!-- You can set background color of the splash screen -->
+
+    <!-- You can insert your own image assets here -->
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/futurizr" /> <!-- you can add image file. please do not add extension of the image file, just add file name -->
+    </item>
+</layer-list>
+```
+
 ## Useful Resources & Links
 * [Official Flutter Docs](https://flutter.io/docs/)
 * [macOS Setup Guide](https://flutter.io/setup-macos)

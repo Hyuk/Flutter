@@ -16,7 +16,7 @@ dependencies:
 $ flutter pub get
 ```
 
-* firebase admob 라이브러리를 다트코드에 추가한다.
+* firebase admob 라이브러리를 main에 추가한다.
 ```dart
 import 'package:firebase_admob/firebase_admob.dart';
 ```
@@ -32,43 +32,6 @@ FirebaseAdMob.instance.initialize(appId: appId);
 ```
 * main.dart를 다음과 같이 업데이트하면, Interstitial 배너와 일반배너를 함께 적용할 수 있다.
 ```dart
-import 'package:flutter/material.dart';
-
-import 'package:firebase_admob/firebase_admob.dart';
-
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-
-    FirebaseAdMob.instance.initialize(appId: "ca-app-pub-8202026463041478~4835148924").then((response){
-      myBanner..load()..show();
-      myInterstitial..load()..show(
-          anchorType: AnchorType.bottom,
-          anchorOffset: 0.0,
-        );
-    });
-
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.green,
-      ),
-      home: MyHomePage(title: 'Flutter Firebase Admob'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
@@ -81,9 +44,52 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
 
-//    FirebaseAdMob.instance.initialize(appId: "ca-app-pub-8202026463041478~4835148924").then((response){
-//      myBanner..load()..show();
-//    });
+    String appId = "";
+    FirebaseAdMob.instance.initialize(appId: appId);
+
+    MobileAdTargetingInfo targetingInfo = MobileAdTargetingInfo(
+      keywords: <String>['flutterio', 'beautiful apps'],
+      contentUrl: 'https://flutter.io',
+      birthday: DateTime.now(),
+      childDirected: false,
+      designedForFamilies: false,
+      gender: MobileAdGender.male,
+      testDevices: <String>[''],
+    );
+
+    BannerAd myBanner = BannerAd(
+      adUnitId: BannerAd.testAdUnitId,
+      size: AdSize.smartBanner,
+      targetingInfo: targetingInfo,
+      listener: (MobileAdEvent event) {
+        print("BannerAd event is $event");
+      },
+    );
+
+    InterstitialAd myInterstitial = InterstitialAd(
+      adUnitId: InterstitialAd.testAdUnitId,
+      targetingInfo: targetingInfo,
+      listener: (MobileAdEvent event) {
+        print("InterstitialAd event is $event");
+      },
+    );
+
+    myInterstitial
+      ..load()
+      ..show(
+        anchorType: AnchorType.bottom,
+        anchorOffset: 0.0,
+      );
+
+    myBanner
+    // typically this happens well before the ad is shown
+      ..load()
+      ..show(
+        // Positions the banner ad 60 pixels from the bottom of the screen
+        anchorOffset: 0.0,
+        // Banner Position
+        anchorType: AnchorType.bottom,
+      );
 
     return Scaffold(
       appBar: AppBar(
@@ -107,35 +113,7 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: Icon(Icons.add),
-      ),
+      ), 
     );
   }
-}
-
-MobileAdTargetingInfo targetingInfo = MobileAdTargetingInfo(
-  keywords: <String>['game', 'pubg'],
-  contentUrl: 'https://flutter.io',
-  childDirected: false,
-  testDevices: <String>[], // Android emulators are considered test devices
-);
-
-BannerAd myBanner = BannerAd(
-  adUnitId: BannerAd.testAdUnitId,
-  size: AdSize.smartBanner,
-  targetingInfo: targetingInfo,
-  listener: (MobileAdEvent event) {
-    print("BannerAd event is $event");
-  },
-);
-
-InterstitialAd myInterstitial = InterstitialAd(
-  // Replace the testAdUnitId with an ad unit id from the AdMob dash.
-  // https://developers.google.com/admob/android/test-ads
-  // https://developers.google.com/admob/ios/test-ads
-  adUnitId: InterstitialAd.testAdUnitId,
-  targetingInfo: targetingInfo,
-  listener: (MobileAdEvent event) {
-    print("InterstitialAd event is $event");
-  },
-);
 ```

@@ -46,3 +46,30 @@ $ flutter doctor
 * [Support APKs with 32-bit and 64-bit binaries within them](https://github.com/flutter/flutter/issues/18494)
 * [Flutter Inspector](https://flutter.dev/docs/development/tools/inspector)
 * [Flutter Example Apps](https://github.com/iampawan/FlutterExampleApps)
+
+## Android / iOS Icon & Splash Image Size
+
+* LDPI : 36 x 36 px
+* MDPI : 48 x 48 px
+* HDPI : 72 x 72 px
+* XHDPI : 96 x 96 px
+* XXHDPI : 144 x 144 px
+* XXXHDPI : 192 x 192 px
+* Market : 512 x 512 px
+
+* Android Splash Image Size
+* LDPI : 200 x 320 px / 320 x 200 px
+* MDPI : 320 x 480 px / 480 x 320 px
+* HDPI : 480 x 800 px / 800 x 480 px
+* XHDPI : 720 x 1280 px / 1280 x 720 px
+* XXHDPI : 960 x 1600 px / 1600 x 960 px
+* XXXHDPI : 1280 x 1920 px / 1920 x 1280 px
+
+* iOS Splash Image Size
+* iPad(1x - Non-Retina) 768 x 1024 px / 1024 x 768 px
+* iPad(2x - Retina) 1536 x 2048 px / 2048 x 1536 px
+* iPhone(1x - Non-Retina) 320 x 480 px / 480 x 320 px
+* iPhone(2x - Retina) 640 x 960 px / 960 x 640 px
+* iPhone5(2x - Retina) 640 x 1136 px / 1136 x 640 px
+* iPhone6(2x) 750 x 1334 px / 1334 x 750 px
+* iPhone6Plus(3x) 1242 x 2208 px / 2208 x 1242 px

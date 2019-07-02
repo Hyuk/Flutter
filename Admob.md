@@ -54,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
       childDirected: false,
       designedForFamilies: false,
       gender: MobileAdGender.male,
-      testDevices: <String>[''],
+      testDevices: <String>[],
     );
 
     BannerAd myBanner = BannerAd(

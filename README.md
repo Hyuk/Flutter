@@ -46,6 +46,17 @@ $ flutter doctor
 * [Support APKs with 32-bit and 64-bit binaries within them](https://github.com/flutter/flutter/issues/18494)
 * [Flutter Inspector](https://flutter.dev/docs/development/tools/inspector)
 * [Flutter Example Apps](https://github.com/iampawan/FlutterExampleApps)
+* [Online Photoshop Free](https://www.freephototool.com/)
+* [Launcher Icon Generator](https://jgilfelt.github.io/AndroidAssetStudio/icons-launcher.html)
+
+## Android Launcher Icon Size
+* LDPI : 36 x 36
+* MDPI : 48 x 48
+* HDPI : 72 x 72
+* XHDPI : 96 x 96
+* XXHDPI : 144 x 144
+* XXXHDPI : 192 x 192.
+* WEB : 512 x 512
 
 ## Android / iOS Icon & Splash Image Size
 
@@ -75,3 +86,24 @@ $ flutter doctor
 * iPhone6Plus(3x) 1242 x 2208 px / 2208 x 1242 px
 
 ## [Widgets]()
+
+## Flutter Build APK Checklist
+* Launcher Icon
+    * Image Create: [Online Photoshop Free](https://www.freephototool.com/)
+    * res -> new -> image asset
+* Create a keystore
+You can create the key in specific location as below
+```bash
+$ keytool -genkey -v -keystore D:/key/key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key
+```
+* Create key.properties File under android folder
+```properties
+storePassword=password
+keyPassword=password
+keyAlias=key
+storeFile=D:/key/key.jks
+```
+* Build APK
+```bash
+$ flutter build appbundle
+```

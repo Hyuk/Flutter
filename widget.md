@@ -687,6 +687,7 @@ ListTile(
 MaterialApp(
     title: appTitle,
     home: MyHomePage(title: appTitle),
+    debugShowCheckedModeBanner: false,
 )
 ```
 

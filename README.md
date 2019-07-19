@@ -88,9 +88,12 @@ $ flutter doctor
 ## [Widgets]()
 
 ## Flutter Build APK Checklist
-* Launcher Icon
+* Launcher Icon (Adaptive Icon)
     * Image Create: [Online Photoshop Free](https://www.freephototool.com/)
     * res -> new -> image asset
+
+* Launcher Icon (Non-Adaptive Icon)
+    * [App Icon Generator](https://appicon.co/#app-icon)
 * Create a keystore
 You can create the key in specific location as below
 ```bash

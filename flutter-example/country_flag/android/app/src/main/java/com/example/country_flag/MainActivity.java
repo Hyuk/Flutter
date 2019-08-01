@@ -1,4 +1,4 @@
-package com.example.list_detail;
+package com.example.country_flag;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

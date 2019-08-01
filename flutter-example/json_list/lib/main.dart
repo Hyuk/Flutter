@@ -20,7 +20,7 @@ class MyGetHttpDataState extends State<MyGetHttpData> {
   // final String url = "https://swapi.co/api/people";
   final String url = "https://raw.githubusercontent.com/LearnWebCode/json-example/master/animals-1.json";
   List data;
-
+  var uniqueIds;
   // Function to get the JSON data
   Future<String> getJSONData() async {
     var response = await http.get(
@@ -41,8 +41,10 @@ class MyGetHttpDataState extends State<MyGetHttpData> {
       data = dataConvertedToJSON;
     });
 
+
     return "Successfull";
   }
+
 
   @override
   Widget build(BuildContext context) {
@@ -66,6 +68,9 @@ class MyGetHttpDataState extends State<MyGetHttpData> {
                         // Read the name field value and set it in the Text widget
                         //data[index]['films'][0],
                         data[index]['name'],
+
+
+
                         // set some style to text
                         style: new TextStyle(
                             fontSize: 20.0, color: Colors.lightBlueAccent),

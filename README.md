@@ -1,5 +1,7 @@
 # Flutter
 
+## [Installation](./installation.md)
+
 ## How to switch channels
 * There are 4 channels in flutter, master, dev, beta and stable.
 ```bash

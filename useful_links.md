@@ -61,3 +61,7 @@ Flutter Application Demo Examples
     * A quick sample app on how to implement a friend list and a profile page in Flutter.
 * [Flutter UI Challenges](https://github.com/tomialagbe/flutter_ui_challenges)
     * Flutter UI Challenges
+* [Flutter UI Nice](https://github.com/nb312/flutter-ui-nice)
+    * More than 130+ pages in this beautiful app and more than 45 developers has contributed to it.
+* [Flutter WhatsApp Clone](https://github.com/iampawan/FlutterWhatsAppClone)
+    * Building a WhatsApp Clone in Flutter.

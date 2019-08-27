@@ -26,3 +26,38 @@ Flutter Application Demo Examples
 ## Training
 * [Learn Flutter & Dart to Build iOS & Android Apps](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/)
 * [The Complete Flutter Development Bootcamp with Dart](https://www.udemy.com/flutter-bootcamp-with-dart/)
+
+## Github Repository for Flutter
+* [FirebaseExtended](https://github.com/FirebaseExtended)
+* [Flutterfire](https://github.com/FirebaseExtended/flutterfire)
+* [firebase_admob](https://github.com/FirebaseExtended/flutterfire/tree/master/packages/firebase_admob)
+* [Flutter With Firebase](https://github.com/iampawan/FlutterWithFirebase)
+    * A Flutter app with firebase libraries implementation
+* [Flutter Catalog](https://github.com/X-Wei/flutter_catalog)
+    * An app showcasing Flutter components, with side-by-side source code view.
+* [Flutter Screens](https://github.com/samarthagarwal/FlutterScreens)
+    * A collection of Screens and attractive UIs built with Flutter ready to be used in your applications. No external libraries are used. Just download, add to your project and use.
+* [Flutter Cinematic](https://github.com/aaronoe/FlutterCinematic)
+    * Flutter clone of my "Cinematic" App
+* [Fluttergram](https://github.com/mdanics/fluttergram)
+    * A fully functional Instagram clone written in Flutter using Firebase / Firestore
+* [Flutter UI Kit](https://github.com/iampawan/Flutter-UI-Kit)
+    * Flutter app for collection of UI in a UIKit
+* [Flutter Architecture Samples](https://github.com/brianegan/flutter_architecture_samples)
+    * TodoMVC for Flutter http://fluttersamples.com/
+* [Udacity Course](https://github.com/flutter/udacity-course)
+    * Build native mobile apps with Flutter https://www.udacity.com/course/ud905
+* [Awesome Flutter](https://github.com/Solido/awesome-flutter)
+    * An awesome list that curates the best Flutter libraries, tools, tutorials, articles and more.
+* [Flutter Desktop Embedding](https://github.com/google/flutter-desktop-embedding)
+    * Examples of using, and testbed for, the in-development Flutter for Desktop
+* [Flutter Web](https://github.com/flutter/flutter_web)
+    * Bring your Flutter code to web browsers https://flutter.dev/web
+* [Flutter Playground](https://github.com/ibhavikmakwana/FlutterPlayground)
+    * Playground app for Flutter
+* [Flutter Example Apps](https://github.com/iampawan/FlutterExampleApps)
+    * [Example APPS] Basic Flutter apps, for flutter devs.
+* [Flutter Mates](https://github.com/CodemateLtd/FlutterMates)
+    * A quick sample app on how to implement a friend list and a profile page in Flutter.
+* [Flutter UI Challenges](https://github.com/tomialagbe/flutter_ui_challenges)
+    * Flutter UI Challenges

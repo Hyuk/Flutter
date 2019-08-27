@@ -7,8 +7,6 @@ Flutter Official Website Documentation
 ## [Flutter Awesome](https://flutterawesome.com/)
 Flutter Application Demo Examples
 
-* [macOS Setup Guide](https://flutter.io/setup-macos)
-* [Windows Setup Guide](https://flutter.io/setup-windows)
 * [Linux Setup Guide](https://flutter.io/setup-linux)
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Visual Studio Code Flutter Extension](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter)
@@ -22,3 +20,9 @@ Flutter Application Demo Examples
 * [Flutter Example Apps](https://github.com/iampawan/FlutterExampleApps)
 * [Online Photoshop Free](https://www.freephototool.com/)
 * [Launcher Icon Generator](https://jgilfelt.github.io/AndroidAssetStudio/icons-launcher.html)
+* [Convert CSV to JSON](http://www.convertcsv.com/csv-to-json.htm)
+* [Flutter Container Cheat Sheet](https://medium.com/jlouage/container-de5b0d3ad184)
+
+## Training
+* [Learn Flutter & Dart to Build iOS & Android Apps](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/)
+* [The Complete Flutter Development Bootcamp with Dart](https://www.udemy.com/flutter-bootcamp-with-dart/)

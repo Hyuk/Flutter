@@ -3,7 +3,8 @@
 
 ### [Flutter Packages](https://pub.dev/)
 
-* [get 3.13.2](https://pub.dev/packages/get)
+* [get](https://pub.dev/packages/get)
+* [page_transition](https://pub.dev/packages/page_transition)
 
 
 ### [Plugins](https://github.com/flutter/plugins)

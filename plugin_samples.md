@@ -3,6 +3,8 @@
 
 ### [Flutter Packages](https://pub.dev/)
 
+* [auto_size_text](https://pub.dev/packages/auto_size_text): Flutter widget that automatically resizes text to fit perfectly within its bounds.
+* [flutter_screenutil](https://pub.dev/packages/flutter_screenutil): A flutter plugin for adapting screen and font size. Let your UI display a reasonable layout on different screen sizes!
 * [get](https://pub.dev/packages/get)
 * [page_transition](https://pub.dev/packages/page_transition)
 

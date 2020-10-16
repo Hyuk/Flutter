@@ -1,10 +1,17 @@
 # Plugins and Samples
 
-## [Plugins](https://github.com/flutter/plugins)
 
-### [In App Purchase](https://pub.dev/packages/in_app_purchase)
-### [bidirectional_scroll_view](https://pub.dev/packages/bidirectional_scroll_view)
-### [Android Alarm Manager](https://pub.dev/packages/android_alarm_manager)
+### [Flutter Packages](https://pub.dev/)
+
+* [get 3.13.2](https://pub.dev/packages/get)
+
+
+### [Plugins](https://github.com/flutter/plugins)
+
+* [In App Purchase](https://pub.dev/packages/in_app_purchase)
+* [bidirectional_scroll_view](https://pub.dev/packages/bidirectional_scroll_view)
+* [Android Alarm Manager](https://pub.dev/packages/android_alarm_manager)
+
 
 ## Samples
 

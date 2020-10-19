@@ -65,3 +65,8 @@ Flutter Application Demo Examples
     * More than 130+ pages in this beautiful app and more than 45 developers has contributed to it.
 * [Flutter WhatsApp Clone](https://github.com/iampawan/FlutterWhatsAppClone)
     * Building a WhatsApp Clone in Flutter.
+* [Awesome Flutter](https://github.com/Solido/awesome-flutter)
+
+
+### Flutter Community
+* [Flutter Dev at Reddit](https://www.reddit.com/r/FlutterDev/)
